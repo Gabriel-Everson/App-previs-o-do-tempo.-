@@ -1,6 +1,0 @@
-1a Questão:
-
-Crie um aplicativo que mostra a previsão do tempo de 3 cidades, e a temperatura atual:
-- Salvador
-- Recife
-- São Paulo
