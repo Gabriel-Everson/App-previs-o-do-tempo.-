@@ -1,0 +1,140 @@
+*{
+    font-size: "Poppins", sans serif;
+    margin: 0px;
+}
+:root{
+    --bg-color: rgb(7, 3, 31);
+    --third-color:rgb(19, 10, 59);
+    --secund-color:rgb(97, 47, 174);
+    --quart-color:rgb(134, 80, 214);
+    --hover-secund-color:rgb(61, 28, 111);
+    --transition:rgba(255, 255, 255, 0.207);
+    --transition2:rgba(45, 16, 69, 0.207);
+}
+body{
+    background: var(--bg-color);
+}
+@keyframes border-color{
+    0% {
+        color: var(--quart-color);
+        box-shadow: -1px -1px 10px 5px var(--quart-color);
+    }
+    25%{
+        color: aqua;
+        box-shadow: -1px -1px 10px 5px aqua;
+    }
+    50% {
+        color: var(--secund-color);
+        box-shadow: -1px -1px 10px 5px var(--secund-color);
+    }
+    75% {
+        color: var(--hover-secund-color);
+        box-shadow: -1px -1px 10px 5px var(--hover-secund-color);
+    }
+    100% {
+        color: var(--quart-color);
+        box-shadow: -1px -1px 10px 5px var(--quart-color);
+    }
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.box{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    animation: 5s border-color infinite;
+    justify-content: center;
+    align-items: center;
+}
+.temp-image{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+#temp-image{
+    width: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+#temp-image:hover{
+    transform: scale(1.1);
+    animation: 5s rotate infinite;
+}
+.temp-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    transition: 1s;
+    width: 50%;
+}
+.temp-text:hover{
+    transform: scale(1.1);
+}
+#temp-text{
+    font-size: 30px;
+}
+.botoes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.botao{
+    width: 25%;
+    height: 100px;
+}
+#botao-S{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 25px;
+    background: transparent;
+    animation: 5s border-color infinite;
+    border: none;
+    border-radius: 20px;
+    transition: 1s;
+}
+#botao-Rj{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 25px;
+    background: transparent;
+    animation: 5s border-color infinite;
+    border: none;
+    border-radius: 20px;
+    transition: 1s;
+}
+#botao-Sp{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 25px;
+    background: transparent;
+    animation: 5s border-color infinite;
+    border: none;
+    border-radius: 20px;
+    transition: 1s;
+}
+#botao-S:hover{
+    transform: scale(1.1);
+    background-color: var(--transition2);
+}
+#botao-Rj:hover{
+    transform: scale(1.1);
+    background-color: var(--transition2);
+}
+#botao-Sp:hover{
+    transform: scale(1.1);
+    background-color: var(--transition2);
+}
